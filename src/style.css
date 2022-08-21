@@ -1,5 +1,13 @@
+html {
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 body {
   font-family: Comic Sans MS, Comic Sans, cursive;
+  background-color: transparent;
 }
 
 h1 {
@@ -17,7 +25,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color:#C4D0CE;
   font-size: 12px;
   font-weight: 100;
   line-height: 19px;
@@ -28,13 +36,20 @@ li:first-letter {
 }
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 80px auto;
+    
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background: #2E4E43;/* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    opacity: 0.7; /* Полупрозрачный фон */
+    filter: alpha(Opacity=70); /* Прозрачность в IE */
+    color: #fff; /* Цвет текста */
+   }
 }
 .overview {
   margin-bottom: 20px;
@@ -68,9 +83,9 @@ li:first-letter {
 }
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
-.weather-forecast-temperature-min{
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
 .weather-forecast-temperatures {
